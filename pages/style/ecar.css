@@ -1,3 +1,115 @@
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a,img {
+    -webkit-touch-callout: none;
+}
+
+body,html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+button,input,optgroup,select,textarea {
+    -webkit-appearance: none;
+}
+
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: red;
+}
+
+body {
+    -webkit-text-size-adjust: 100%!important;
+}
+
+input::-webkit-input-speech-button {
+    display: none;
+}
+/*! reset css */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+}
+/*! HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+    content: '';
+    content: none;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+/*! to preserve line-height and selector appearance */
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+button,input,select,textarea {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    overflow: visible;
+    width: auto;
+    *font-size: 100%;
+}
+
+legend {
+    color: #000;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+/*! end reset css */
+body,html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    outline: 0;
+}
+
+a,button,input,select,textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .test {
     width: 200px;
     height: 300px;

@@ -1,3 +1,40 @@
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a,img {
+    -webkit-touch-callout: none;
+}
+
+body,html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+button,input,optgroup,select,textarea {
+    -webkit-appearance: none;
+}
+
+a,button,input,optgroup,select,textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: red;
+}
+
+body {
+    -webkit-text-size-adjust: 100%!important;
+}
+
+input::-webkit-input-speech-button {
+    display: none;
+}
 /*! reset css */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     font: inherit;

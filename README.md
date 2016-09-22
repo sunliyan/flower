@@ -1,3 +1,5 @@
+[https://yangbo5207.github.io/flower/](https://yangbo5207.github.io/flower/)
+
 #### 一 在github上创建项目仓库，命名为flower
 
 #### 二 生成在线地址
@@ -32,6 +34,5 @@ github项目页面 -> settings -> 点击按钮Launch automatic page generator ->
 ```js
 ~ npm install
 ```
-
 
 > [易到用车psd地址](https://yun.baidu.com/share/link?shareid=2739572407&uk=1040742941)
