@@ -20,5 +20,6 @@
         "gulp-rsync": "0.0.5",
         "gulp-sass": "*",
         "gulp-watch": "^4.3.3",
+        "gulp-util": "*"
     }
 }
