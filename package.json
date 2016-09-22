@@ -1,0 +1,24 @@
+{
+    "name": "flower",
+    "version": "1.0.0",
+    "description": "gulp config",
+    "author": "flower",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "*",
+        "through2": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-cssbeautify": "*",
+        "gulp-csscomb": "*",
+        "gulp-csslint": "*",
+        "gulp-foreach": "^0.1.0",
+        "gulp-less": "*",
+        "gulp-livereload": "*",
+        "gulp-minify-css": "*",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "*",
+        "gulp-rsync": "0.0.5",
+        "gulp-sass": "*",
+        "gulp-watch": "^4.3.3",
+    }
+}
