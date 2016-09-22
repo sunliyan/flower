@@ -224,6 +224,7 @@ section.banner ul.tips {
     position: relative;
     top: 1.32rem;
     left: 1.18rem;
+    width: 1.5rem;
     color: #fff;
 }
 
@@ -354,6 +355,7 @@ section.pathway .verfiy {
 }
 
 section.pathway .verfiy .phone {
+    height: .28rem;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
@@ -379,6 +381,7 @@ section.pathway .input {
 
 section.pathway input {
     font-size: 14px;
+    display: block;
     width: 100%;
     height: 100%;
     text-indent: .1rem;
