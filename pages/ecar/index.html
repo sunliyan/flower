@@ -7,7 +7,79 @@
     <title>易到用车</title>
 </head>
 <body>
-<h1>这是易到用车h5页面</h1>
-<div class="test">测试样式</div>
+<header class="header">
+    <div class="main">
+        <div class="menber logo">
+            <a href="#"><img src="../images/ecar/00.png" /></a>
+            <a href="#"><img src="../images/ecar/02.png" /></a>
+        </div>
+        <div class="menber phone">
+            <p>客服电话</p>
+            <a href="#"><img src="../images/ecar/01.png" /></a>
+        </div>
+    </div>
+</header>
+
+<section class="banner">
+    <div class="wrap">
+        <ul class="tips">
+            <li>佣金终身八折</li>
+            <li><span class="red">588元</span>易道用车卡</li>
+            <li><span class="red">3888元</span>美股实时行情</li>
+        </ul>
+    </div>
+</section>
+
+<section class="pathway">
+    <div class="part-0">
+        <div class="aa aa-0"></div>
+        <div class="aa aa-1"></div>
+        <div class="aa aa-2"></div>
+    </div>
+    <div class="part-1 signup">
+        <div class="leftpath">
+            <div class="bb bb-0"></div>
+            <div class="bb bb-1"></div>
+            <div class="bb bb-2"></div>
+        </div>
+        <div class="form">
+            <div class="title">快速注册</div>
+            <div class="verfiy">
+                <div class="phone"><input type="text" placeholder="手机号码"></div>
+                <div class="code">发送验证码</div>
+            </div>
+            <div class="input"><input type="text" placeholder="请输入验证码"></div>
+            <div class="input"><input type="text" placeholder="请输入密码"></div>
+            <div class="input"><input type="text" placeholder="再次输入密码"></div>
+            <div class="submit">立即注册</div>
+        </div>
+    </div>
+    <div class="part-2">
+        <div class="cc cc-0"></div>
+        <div class="cc cc-1"></div>
+        <div class="cc cc-2"></div>
+        <div class="cc cc-3"></div>
+    </div>
+</section>
+
 </body>
+<script>
+    // 根据页面宽度计算html的font-size，使其始终保持为100px
+    function setFontsize() {
+        var dw = document.body.clientWidth;
+        if (dw > 580) {
+            dw = 580;
+            document.body.style.width = dw + 'px';
+            document.body.style.margin = '0 auto';
+        } else {
+            dw = document.body.clientWidth;
+        }
+        document.documentElement.style.fontSize = dw/3.6 + 'px';
+    }
+
+    setFontsize();
+    window.onresize = function() {
+        setFontsize();
+    }
+</script>
 </html>

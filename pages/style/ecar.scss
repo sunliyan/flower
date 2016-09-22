@@ -1,8 +1,233 @@
 @import "libs/reset";
 
-.test {
-    width: 200px;
-    height: 300px;
-    margin: 300px auto;
-    background-color: #ccc;
+body {
+    background-color: #f2e8da;
+    font-size: 0.16rem;
+}
+img {
+    display: block;
+    width: 100%;
+}
+input {
+    outline: none;
+    background: none;
+    border: none;
+}
+.main {
+    box-sizing: border-box;
+    padding: 0 0.16rem;
+}
+
+header.header {
+    height: 0.45rem;
+    background-color: #fff;
+    .main {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .menber {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        width: 1.12rem;
+        a:nth-of-type(1) {
+            width: 0.43rem;
+            padding-right: 0.08rem;
+            border-right: 1px solid #f2e8da;
+        }
+        a:nth-of-type(2) {
+            width: 0.52rem;
+            padding-left: 0.08rem;
+        }
+    }
+    .phone {
+        flex-direction: column;
+        justify-content: center;
+        width: 0.8rem;
+        p {
+            -webkit-text-size-adjust: none;
+            width: 100%;
+            font-size: 0.06rem;
+            text-align: right;
+        }
+        a {
+            width: 0.8rem;
+            margin-top: 0.05rem;
+        }
+    }
+}
+
+section.banner {
+    box-sizing: border-box;
+    padding-top: 0.28rem;
+    .wrap {
+        width: 3.4rem;
+        height: 2.04rem;
+        margin: 0 auto;
+        background: url('../images/ecar/03.png') no-repeat;
+        background-size: contain;
+    }
+
+    ul.tips {
+        font-size: 0.12rem;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        top: 1.32rem;
+        left: 1.18rem;
+        li {
+            line-height: 0.16rem;
+            position: relative;
+
+            &:before {
+                display: block;
+                content: '';
+                width: 0.06rem;
+                height: 0.06rem;
+                background-color: #761616;
+                border-radius: 0.1rem;
+                position: absolute;
+                top: 0.035rem;
+                left: -0.1rem;
+            }
+        }
+    }
+    .red {
+        color: #ff3a49;
+    }
+}
+
+section.pathway {
+    .part-0 {
+        display: flex;
+        height: 0.5rem;
+        flex-direction: row;
+    }
+    .aa-0 {
+        width: 0.5rem;
+        background: url('../images/ecar/curve-01-radius.png') no-repeat;
+        background-size: contain;
+    }
+    .aa-1 {
+        width: 0.2rem;
+        background: url('../images/ecar/curve-01-top.png') no-repeat;
+        background-size: cover;
+    }
+    .aa-2 {
+        flex: 1;
+        background: url('../images/ecar/curve-01-repeat-x.png') repeat-x;
+        background-size: 0.09rem 0.5rem;
+    }
+
+    .part-1 {
+        display: flex;
+    }
+    .leftpath {
+        width: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .bb-0 {
+        height: 0.17rem;
+        background: url('../images/ecar/curve-01-bottom.png') no-repeat;
+        background-size: cover;
+    }
+    .bb-1 {
+        flex: 1;
+        background: url('../images/ecar/curve-01-repeat-y.png') repeat-y;
+        background-size: 0.5rem 0.09rem;
+    }
+    .bb-2 {
+        height: 0.12rem;
+        background: url('../images/ecar/curve-02-top.png') no-repeat;
+        background-size: 0.5rem 0.12rem;
+    }
+    .form {
+        flex: 1;
+        padding-left: 0.3rem;
+        padding-bottom: 0.55rem;
+        background: url('../images/ecar/04.png') 0 bottom no-repeat;
+        background-size: contain;
+    }
+    .title {
+        line-height: 0.41rem;
+        font-size: 0.18rem;
+        font-weight: bold;
+        color: #eb6100;
+        text-indent: 0.1rem;
+    }
+    .verfiy {
+        width: 2.4rem;
+        height: 0.28rem;
+        display: flex;
+        .phone {
+            flex: 1;
+        }
+        .code {
+            width: 0.9rem;
+            background-color: #ff9800;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 0.28rem;
+            margin-left: 8px;
+            border-radius: 4px;
+        }
+    }
+    .input {
+        margin-top: 10px;
+        width: 2.4rem;
+        height: 0.28rem;
+    }
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        font-size: 14px;
+        text-indent: 0.1rem;
+    }
+    .submit {
+        width: 2.4rem;
+        height: 0.5rem;
+        color: #fff;
+        background-color: #eb6100;
+        margin-top: 0.2rem;
+        border-radius: 4px;
+        box-shadow: 0 3px 0px #be3f00;
+        font-size: 0.24rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part-2 {
+        display: flex;
+        height: 0.5rem;
+    }
+    .cc-0 {
+        width: 0.5rem;
+        height: 0.5rem;
+        background: url('../images/ecar/curve-02-radius.png') no-repeat;
+        background-size: 0.5rem 0.5rem;
+    }
+    .cc-1 {
+        width: 0.21rem;
+        background: url('../images/ecar/curve-02-bottom.png') no-repeat;
+        background-size: 0.21rem 0.5rem;
+    }
+    .cc-2 {
+        flex: 1;
+        background: url('../images/ecar/curve-02-repeat-x.png') repeat-x;
+        background-size: 0.09rem 0.5rem;
+    }
+    .cc-3 {
+        width: 0.55rem;
+        background: url('../images/ecar/curve-03.png') no-repeat;
+        background-size: 0.55rem 0.5rem;
+    }
 }

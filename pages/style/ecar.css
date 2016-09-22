@@ -110,9 +110,339 @@ a,button,input,select,textarea {
     -webkit-tap-highlight-color: transparent;
 }
 
-.test {
-    width: 200px;
-    height: 300px;
-    margin: 300px auto;
-    background-color: #ccc;
+body {
+    font-size: .16rem;
+    background-color: #f2e8da;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input {
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+
+.main {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .16rem;
+}
+
+header.header {
+    height: .45rem;
+    background-color: #fff;
+}
+
+header.header .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+header.header .menber {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+header.header .logo {
+    width: 1.12rem;
+}
+
+header.header .logo a:nth-of-type(1) {
+    width: .43rem;
+    padding-right: .08rem;
+    border-right: 1px solid #f2e8da;
+}
+
+header.header .logo a:nth-of-type(2) {
+    width: .52rem;
+    padding-left: .08rem;
+}
+
+header.header .phone {
+    flex-direction: column;
+    width: .8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+header.header .phone p {
+    font-size: .06rem;
+    width: 100%;
+    text-align: right;
+    -webkit-text-size-adjust: none;
+}
+
+header.header .phone a {
+    width: .8rem;
+    margin-top: .05rem;
+}
+
+section.banner {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: .28rem;
+}
+
+section.banner .wrap {
+    width: 3.4rem;
+    height: 2.04rem;
+    margin: 0 auto;
+    background: url(../images/ecar/03.png) no-repeat;
+    background-size: contain;
+}
+
+section.banner ul.tips {
+    font-size: .12rem;
+    font-weight: 700;
+    position: relative;
+    top: 1.32rem;
+    left: 1.18rem;
+    color: #fff;
+}
+
+section.banner ul.tips li {
+    line-height: .16rem;
+    position: relative;
+}
+
+section.banner ul.tips li:before {
+    position: absolute;
+    top: .035rem;
+    left: -.1rem;
+    display: block;
+    width: .06rem;
+    height: .06rem;
+    content: '';
+    border-radius: .1rem;
+    background-color: #761616;
+}
+
+section.banner .red {
+    color: #ff3a49;
+}
+
+section.pathway .part-0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    flex-direction: row;
+    height: .5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+}
+
+section.pathway .aa-0 {
+    width: .5rem;
+    background: url(../images/ecar/curve-01-radius.png) no-repeat;
+    background-size: contain;
+}
+
+section.pathway .aa-1 {
+    width: .2rem;
+    background: url(../images/ecar/curve-01-top.png) no-repeat;
+    background-size: cover;
+}
+
+section.pathway .aa-2 {
+    background: url(../images/ecar/curve-01-repeat-x.png) repeat-x;
+    background-size: .09rem .5rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+
+section.pathway .part-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+}
+
+section.pathway .leftpath {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    flex-direction: column;
+    width: .5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+}
+
+section.pathway .bb-0 {
+    height: .17rem;
+    background: url(../images/ecar/curve-01-bottom.png) no-repeat;
+    background-size: cover;
+}
+
+section.pathway .bb-1 {
+    background: url(../images/ecar/curve-01-repeat-y.png) repeat-y;
+    background-size: .5rem .09rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+
+section.pathway .bb-2 {
+    height: .12rem;
+    background: url(../images/ecar/curve-02-top.png) no-repeat;
+    background-size: .5rem .12rem;
+}
+
+section.pathway .form {
+    padding-bottom: .55rem;
+    padding-left: .3rem;
+    background: url(../images/ecar/04.png) 0 bottom no-repeat;
+    background-size: contain;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+
+section.pathway .title {
+    font-size: .18rem;
+    font-weight: 700;
+    line-height: .41rem;
+    text-indent: .1rem;
+    color: #eb6100;
+}
+
+section.pathway .verfiy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    width: 2.4rem;
+    height: .28rem;
+}
+
+section.pathway .verfiy .phone {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+
+section.pathway .verfiy .code {
+    font-size: 12px;
+    line-height: .28rem;
+    width: .9rem;
+    margin-left: 8px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ff9800;
+}
+
+section.pathway .input {
+    width: 2.4rem;
+    height: .28rem;
+    margin-top: 10px;
+}
+
+section.pathway input {
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    text-indent: .1rem;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+section.pathway .submit {
+    font-size: .24rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    width: 2.4rem;
+    height: .5rem;
+    margin-top: .2rem;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #eb6100;
+    -webkit-box-shadow: 0 3px 0 #be3f00;
+    box-shadow: 0 3px 0 #be3f00;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+section.pathway .part-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    height: .5rem;
+}
+
+section.pathway .cc-0 {
+    width: .5rem;
+    height: .5rem;
+    background: url(../images/ecar/curve-02-radius.png) no-repeat;
+    background-size: .5rem .5rem;
+}
+
+section.pathway .cc-1 {
+    width: .21rem;
+    background: url(../images/ecar/curve-02-bottom.png) no-repeat;
+    background-size: .21rem .5rem;
+}
+
+section.pathway .cc-2 {
+    background: url(../images/ecar/curve-02-repeat-x.png) repeat-x;
+    background-size: .09rem .5rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    flex: 1;
+}
+
+section.pathway .cc-3 {
+    width: .55rem;
+    background: url(../images/ecar/curve-03.png) no-repeat;
+    background-size: .55rem .5rem;
 }
